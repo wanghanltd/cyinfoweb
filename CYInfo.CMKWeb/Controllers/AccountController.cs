@@ -12,7 +12,7 @@ using CYInfo.CMKWeb.Models;
 
 namespace CYInfo.CMKWeb.Controllers
 {
-    [Authorize]
+    //[Authorize]
     public class AccountController : Controller
     {
         private ApplicationSignInManager _signInManager;

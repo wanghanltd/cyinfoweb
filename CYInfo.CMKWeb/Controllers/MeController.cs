@@ -14,7 +14,7 @@ using CYInfo.CMKWeb.Models;
 
 namespace CYInfo.CMKWeb.Controllers
 {
-    [Authorize]
+    //[Authorize]
     public class MeController : ApiController
     {
         private ApplicationUserManager _userManager;
