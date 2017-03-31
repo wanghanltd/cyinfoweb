@@ -21,13 +21,23 @@ namespace CYInfo.CMKWeb.Models
         [Display(Name = "品牌名")]
         public string BrandName { get; set; }
 
-        /// <summary>
-        /// 尺码表
-        /// </summary>
-        [Display(Name = "尺码表")]
-        public List<SizeChart> SizeCharts { get; set; }
-       
+        ///// <summary>
+        ///// 尺码表
+        ///// </summary>
+        //[Display(Name = "尺码表")]
+        //public List<SizeChart> SizeCharts { get; set; }
 
+        [Display(Name = "女性")]
+        public string Women { get; set; }
+
+        [Display(Name = "男性")]
+        public string Men { get; set; }
+
+        [Display(Name = "儿童")]
+        public string Kids { get; set; }
+
+        [Display(Name = "婴儿")]
+        public string Baby { get; set; }
 
 
     }

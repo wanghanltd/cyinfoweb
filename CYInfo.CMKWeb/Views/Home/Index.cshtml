@@ -27,7 +27,7 @@ foreach (var item in Model) {
                      foreach (var brandname in item.BrandName)
                      {
                         @(new HtmlString("<tr><td>"));
-                           @brandname
+                        @Html.ActionLink(@brandname, "GetSiezeChartByBrandName", "SizeCharts", new { brandName = @brandname }, new { })
                         @(new HtmlString("</td><tr>"));
                      }
                      @(new HtmlString("</table>"));
@@ -41,7 +41,7 @@ foreach (var item in Model) {
                     foreach (var brandname in item.BrandName)
                     {
                         @(new HtmlString("<tr><td>"));
-                    @brandname
+                    @Html.ActionLink(@brandname, "GetSiezeChartByBrandName", "SizeCharts", new { brandName = @brandname }, new { })
                     @(new HtmlString("</td><tr>"));
                     }
                     @(new HtmlString("</table>"));
@@ -56,7 +56,7 @@ foreach (var item in Model) {
                     foreach (var brandname in item.BrandName)
                     {
                         @(new HtmlString("<tr><td>"));
-                    @brandname
+                    @Html.ActionLink(@brandname, "GetSiezeChartByBrandName", "SizeCharts", new { brandName = @brandname }, new { })
                     @(new HtmlString("</td><tr>"));
                     }
                     @(new HtmlString("</table>"));
