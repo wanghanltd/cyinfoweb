@@ -1,0 +1,12 @@
+﻿
+<ul class="nav navbar-nav navbar-right">
+    <li>@Html.ActionLink("尺码", "GetSiezeChartByBrandName", "SizeCharts", routeValues: new { brandName = "Adidas" }, htmlAttributes: new { id = "brandSizeCharts" })</li>
+
+</ul>
+@section SPAViews {
+    @Html.Partial("_Home")
+}
+@section Scripts{
+    @Scripts.Render("~/bundles/knockout")
+    @Scripts.Render("~/bundles/app")
+}

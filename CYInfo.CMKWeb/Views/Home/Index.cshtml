@@ -1,7 +1,47 @@
-﻿@section SPAViews {
-    @Html.Partial("_Home")
+﻿@model IEnumerable<CYInfo.CMKWeb.Models.Brand>
+
+@{
+    ViewBag.Title = "Index";
 }
-@section Scripts{
-    @Scripts.Render("~/bundles/knockout")
-    @Scripts.Render("~/bundles/app")
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.BrandPrefix)
+        </th>
+        <th></th>
+    </tr>
+@{int i = 0;
+foreach (var item in Model) {
+    
+    if(i%4==0)
+    {
+        @(new HtmlString("<tr><td>"));
+        
+            @Html.DisplayFor(modelItem => item.BrandPrefix);
+            @(new HtmlString("</td>"));
+    }
+    else if (i % 4 == 1 || i % 4 == 2)
+    {
+        @(new HtmlString("<td>"));
+        @Html.DisplayFor(modelItem => item.BrandPrefix);
+        @(new HtmlString("</td>"));
+    }
+    else if (i % 4 == 3)
+    {
+        @(new HtmlString("<td>"));
+        @Html.DisplayFor(modelItem => item.BrandPrefix);
+        @(new HtmlString("</tr></td>"));
+    }
+    i++;
+
+   
 }
+}
+
+</table>
