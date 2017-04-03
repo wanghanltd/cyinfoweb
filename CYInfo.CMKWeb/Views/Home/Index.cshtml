@@ -16,35 +16,45 @@
         </th>
         <th></th>
     </tr>
-@{int i = 0;
+@{
+  int i = 0; 
+
 foreach (var item in Model) {
-    
     if(i%4==0)
     {
         @(new HtmlString("<tr><td>"));
             @Html.DisplayFor(modelItem => item.BrandPrefix);
-                     @(new HtmlString("<table>"));
-                     foreach (var brandname in item.BrandName)
+                     @*@(new HtmlString("<table>"));
+                     foreach (string brandname in item.BrandName)
                      {
                         @(new HtmlString("<tr><td>"));
                         @Html.ActionLink(@brandname, "GetSiezeChartByBrandName", "SizeCharts", new { brandName = @brandname }, new { })
                         @(new HtmlString("</td><tr>"));
                      }
-                     @(new HtmlString("</table>"));
+                     @(new HtmlString("</table>"));*@
+                    @(new HtmlString("<ul>"));
+                    foreach (string brandname in item.BrandName)
+                    {
+                        @(new HtmlString("<li>"));
+                    @Html.ActionLink(@brandname, "GetSiezeChartByBrandName", "SizeCharts", new { brandName = @brandname }, new { })
+                    @(new HtmlString("</li>"));
+                    }
+                    @(new HtmlString("</ul>"));
+
             @(new HtmlString("</td>"));
     }
     else if (i % 4 == 1 || i % 4 == 2)
     {
         @(new HtmlString("<td>"));
         @Html.DisplayFor(modelItem => item.BrandPrefix);
-                    @(new HtmlString("<table>"));
-                    foreach (var brandname in item.BrandName)
+                    @(new HtmlString("<ul>"));
+                    foreach (string brandname in item.BrandName)
                     {
-                        @(new HtmlString("<tr><td>"));
+                        @(new HtmlString("<li>"));
                     @Html.ActionLink(@brandname, "GetSiezeChartByBrandName", "SizeCharts", new { brandName = @brandname }, new { })
-                    @(new HtmlString("</td><tr>"));
+                    @(new HtmlString("</li>"));
                     }
-                    @(new HtmlString("</table>"));
+                    @(new HtmlString("</ul>"));
         @(new HtmlString("</td>"));
     }
     else if (i % 4 == 3)
@@ -52,18 +62,18 @@ foreach (var item in Model) {
         @(new HtmlString("<td>"));
         @Html.DisplayFor(modelItem => item.BrandPrefix);
 
-                    @(new HtmlString("<table>"));
-                    foreach (var brandname in item.BrandName)
+                    @(new HtmlString("<ul>"));
+                    foreach (string brandname in item.BrandName)
                     {
-                        @(new HtmlString("<tr><td>"));
+                        @(new HtmlString("<li>"));
                     @Html.ActionLink(@brandname, "GetSiezeChartByBrandName", "SizeCharts", new { brandName = @brandname }, new { })
-                    @(new HtmlString("</td><tr>"));
+                    @(new HtmlString("</li>"));
                     }
-                    @(new HtmlString("</table>"));
+                    @(new HtmlString("</ul>"));
 
         @(new HtmlString("</tr></td>"));
     }
-    i++;
+    ++i;
 
    
 }
