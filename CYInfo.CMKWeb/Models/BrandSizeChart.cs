@@ -27,10 +27,10 @@ namespace CYInfo.CMKWeb.Models
         //[Display(Name = "尺码表")]
         //public List<SizeChart> SizeCharts { get; set; }
 
-        [Display(Name = "女性(Woman)")]
+        [Display(Name = "女性(Female)")]
         public string Women { get; set; }
 
-        [Display(Name = "男性(Man)")]
+        [Display(Name = "男性(Male)")]
         public string Men { get; set; }
 
         [Display(Name = "儿童(Kids)")]
