@@ -18,7 +18,7 @@ namespace CYInfo.CMKWeb.Models
         /// <summary>
         /// 品牌名
         /// </summary>
-        [Display(Name = "品牌名")]
+        [Display(Name = "品牌名(Brand)")]
         public string BrandName { get; set; }
 
         ///// <summary>
@@ -27,16 +27,16 @@ namespace CYInfo.CMKWeb.Models
         //[Display(Name = "尺码表")]
         //public List<SizeChart> SizeCharts { get; set; }
 
-        [Display(Name = "女性")]
+        [Display(Name = "女性(Woman)")]
         public string Women { get; set; }
 
-        [Display(Name = "男性")]
+        [Display(Name = "男性(Man)")]
         public string Men { get; set; }
 
-        [Display(Name = "儿童")]
+        [Display(Name = "儿童(Kids)")]
         public string Kids { get; set; }
 
-        [Display(Name = "婴儿")]
+        [Display(Name = "幼儿(Toddlers)")]
         public string Baby { get; set; }
 
 
