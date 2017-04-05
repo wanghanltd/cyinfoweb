@@ -1,22 +1,22 @@
 ﻿@model CYInfo.CMKWeb.Models.BrandSizeChart
 
 @{
-    ViewBag.Title = "GetSiezeChartByBrandName";
+    ViewBag.Title = "";
 }
 
-<h2>GetSiezeChartByBrandName</h2>
+<h2></h2>
 
 <div>
-    <h4>BrandSizeChart</h4>
+    <h4>@Html.DisplayFor(model => model.BrandName)</h4>
     <hr />
     <dl class="dl-horizontal">
-        <dt>
+        @*<dt>
             @Html.DisplayNameFor(model => model.BrandName)
         </dt>
 
         <dd>
             @Html.DisplayFor(model => model.BrandName)
-        </dd>
+        </dd>*@
 
         <dt>
             @Html.DisplayNameFor(model => model.Women)
