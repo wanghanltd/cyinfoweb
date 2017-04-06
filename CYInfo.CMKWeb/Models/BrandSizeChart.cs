@@ -36,7 +36,7 @@ namespace CYInfo.CMKWeb.Models
         [Display(Name = "儿童(Kids)")]
         public string Kids { get; set; }
 
-        [Display(Name = "幼儿(Toddlers)")]
+        [Display(Name = "婴幼儿(Toddlers)")]
         public string Baby { get; set; }
 
 
