@@ -11,6 +11,8 @@ using System.Web.Mvc;
 namespace CYInfo.CMKWeb.Controllers
 {
     //[Authorize]
+
+    [LogActionFilter]
     public class HomeController : Controller
     {
         static string apiUrl = ConfigurationManager.AppSettings["ApiUrl"].ToString();

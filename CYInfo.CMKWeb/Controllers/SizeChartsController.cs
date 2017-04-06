@@ -12,6 +12,8 @@ using System.Web.Mvc;
 
 namespace CYInfo.CMKWeb.Controllers
 {
+
+    [LogActionFilter]
     public class SizeChartsController : Controller
     {
 
