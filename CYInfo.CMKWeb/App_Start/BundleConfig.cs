@@ -40,6 +40,7 @@ namespace CYInfo.CMKWeb
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                  "~/Content/bootstrap.css",
+                 "~/Content/combine.css",
                  "~/Content/Site.css"));
         }
     }

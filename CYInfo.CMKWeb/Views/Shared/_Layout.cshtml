@@ -9,34 +9,54 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
-<body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("首页(Home)", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+<body class="ezCSS" style="padding-top:0px">
+
+    <div id="ez-header-wrapper" class="ezCSS">
+        <div id="ez-header" class="inner-width ezCSS">
+            <div id="ezoic-logo" class="html5header ezCSS">
+                <div id="logoText" class="html5hgroup ezCSS">
+                    <h1 id="siteName" class="ezomat-logo-text ezCSS">
+                        <a href="http://www.shoesize.cn" class="ezCSS">鞋子尺码对照表(Shoe Size Conversion Charts by Brand)</a>
+                    </h1>
+                </div>
             </div>
-            @*<div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("主页", "Index", "Home", new { area = "" }, null)</li>
-                    <li>@Html.ActionLink("API", "Index", "Help", new { area = "HelpPage" }, null)</li>
-                </ul>
-                @Html.Partial("_LoginPartial")
-            </div>*@
         </div>
     </div>
-    <div class="container body-content">
-        @RenderBody()
-        @RenderSection("SPAViews", required: false)
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - shoesize.cn</p>
-        </footer>
+
+
+    <div id="ez-side-nav" class="ezCSS">
+        <ul id="ez-side-menu" class="ezCSS ezCSS">
+            <li id="item_71710" class="ezCSS"><a href="~/ContactUs/" style="font-size: inherit;" class="ezCSS ezCSS">联系我们(Contact Us)</a></li>
+            <li id="item_71711" class="ezCSS"><a href="~/AboutUs/" style="font-size: inherit;" class="ezCSS ezCSS">关于我们(About Us)</a></li>
+            <li id="item_71711" class="ezCSS"><a href="~/home/" style="font-size: inherit;" class="ezCSS ezCSS">返回首页(Back to Home)</a></li>
+        </ul>
     </div>
+
+    <div id="ez-container" class="ezCSS">
+        <div id="ezoic-content" class="ezCSS">
+            @RenderBody()
+            <hr />
+
+            
+
+            <footer>
+                @*<p>&copy; @DateTime.Now.Year - shoesize.cn</p>*@
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("返回首页", "Index", "Home", new { area = "" }, null)</li>
+
+                </ul>
+            </footer>
+
+
+
+        </div>
+
+        <div id="ez-sidebar" class="ezSidebar ezCSS">
+            
+        </div>
+    </div>
+
+
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
