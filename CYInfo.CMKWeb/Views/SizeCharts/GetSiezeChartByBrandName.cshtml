@@ -7,53 +7,58 @@
 <h2></h2>
 
 <div>
-    <h4>@Html.DisplayFor(model => model.BrandName)</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        @*<dt>
-            @Html.DisplayNameFor(model => model.BrandName)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.BrandName)
-        </dd>*@
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Women)
-        </dt>
+    <div align="center">
+        <h1> @Html.DisplayFor(model => model.BrandName)</h1>
+    </div>
 
-        <dd>
-         
-            @Html.Raw(@Model.Women)
-           
-        </dd>
+                <hr />
+                <dl class="dl-horizontal">
+                    @*<dt>
+                            @Html.DisplayNameFor(model => model.BrandName)
+                        </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Men)
-        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.BrandName)
+                        </dd>*@
 
-        <dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Women)
+                    </dt>
 
-            @Html.Raw(@Model.Men)
-          
-        </dd>
+                    <dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Kids)
-        </dt>
+                        @Html.Raw(@Model.Women)
 
-        <dd>
-            @Html.Raw(@Model.Kids)
-        </dd>
+                    </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Baby)
-        </dt>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Men)
+                    </dt>
 
-        <dd>
-            @Html.Raw(@Model.Baby)
-        </dd>
+                    <dd>
 
-    </dl>
-</div>
+                        @Html.Raw(@Model.Men)
+
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Kids)
+                    </dt>
+
+                    <dd>
+                        @Html.Raw(@Model.Kids)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Baby)
+                    </dt>
+
+                    <dd>
+                        @Html.Raw(@Model.Baby)
+                    </dd>
+
+                </dl>
+            </div>
 
