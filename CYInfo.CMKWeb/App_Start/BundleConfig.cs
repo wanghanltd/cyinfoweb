@@ -29,6 +29,22 @@ namespace CYInfo.CMKWeb
                 "~/Scripts/app/home.viewmodel.js",
                 "~/Scripts/app/_run.js"));
 
+
+            bundles.Add(new ScriptBundle("~/bundles/redscarf2").Include(
+
+               "~/Scripts/redscarf2/blocksit.min.js",
+               "~/Scripts/redscarf2/jquery-1.7.1.min.js",
+               "~/Scripts/redscarf2/jquery-ias.min.js",
+               "~/Scripts/redscarf2/jquery.colorbox-min.js",
+               "~/Scripts/redscarf2/jquery.flexisel.js",
+               "~/Scripts/redscarf2/jquery.flexnav.min.js",
+               "~/Scripts/redscarf2/jquery.lazyload.min.js",
+               "~/Scripts/redscarf2/jquery.sooperfish.min.js",
+               "~/Scripts/redscarf2/modal.js",
+               "~/Scripts/redscarf2/modernizr.js",
+               "~/Scripts/redscarf2/scripts.js"));
+
+
             // 使用要用于开发和学习的 Modernizr 的开发版本。然后，当你做好
             // 生产准备时，请使用 http://modernizr.com 上的生成工具来仅选择所需的测试。
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
@@ -42,6 +58,14 @@ namespace CYInfo.CMKWeb
                  "~/Content/bootstrap.css",
                  "~/Content/combine.css",
                  "~/Content/Site.css"));
+
+            bundles.Add(new StyleBundle("~/Content/redscarf2").Include(
+                "~/Content/redscarf2/colorbox.css",
+                "~/Content/redscarf2/flexisel.css",
+                "~/Content/redscarf2/flexnav.css",
+
+                "~/Content//redscarf2/Site.css"));
+
         }
     }
 }

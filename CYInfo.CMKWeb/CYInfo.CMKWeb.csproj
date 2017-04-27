@@ -256,6 +256,10 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\combine.css" />
+    <Content Include="Content\redscarf2\colorbox.css" />
+    <Content Include="Content\redscarf2\flexisel.css" />
+    <Content Include="Content\redscarf2\flexnav.css" />
+    <Content Include="Content\redscarf2\style.css" />
     <Content Include="Content\Site.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -290,6 +294,17 @@
     <Content Include="Scripts\knockout.validation.debug.js" />
     <Content Include="Scripts\knockout.validation.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\redscarf2\blocksit.min.js" />
+    <Content Include="Scripts\redscarf2\jquery-1.7.1.min.js" />
+    <Content Include="Scripts\redscarf2\jquery-ias.min.js" />
+    <Content Include="Scripts\redscarf2\jquery.colorbox-min.js" />
+    <Content Include="Scripts\redscarf2\jquery.flexisel.js" />
+    <Content Include="Scripts\redscarf2\jquery.flexnav.min.js" />
+    <Content Include="Scripts\redscarf2\jquery.lazyload.min.js" />
+    <Content Include="Scripts\redscarf2\jquery.sooperfish.min.js" />
+    <Content Include="Scripts\redscarf2\modal.js" />
+    <Content Include="Scripts\redscarf2\modernizr.js" />
+    <Content Include="Scripts\redscarf2\scripts.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\sammy-0.7.4.js" />
@@ -345,6 +360,7 @@
     <Content Include="Views\ContactUs\Index.cshtml" />
     <Content Include="Views\MeasureShoeSize\Index.cshtml" />
     <Content Include="Views\AboutUs\Index.cshtml" />
+    <Content Include="Views\Shared\_Layout ttt.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

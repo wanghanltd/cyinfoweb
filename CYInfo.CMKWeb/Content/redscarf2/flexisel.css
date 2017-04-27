@@ -1,0 +1,39 @@
+.clearout {
+	height: 20px; clear: both;
+}
+#flexiselDemo1 {
+	display: none;
+}
+#flexiselDemo2 {
+	display: none;
+}
+#flexiselDemo3 {
+	display: none;
+}
+.nbs-flexisel-container {
+	float: left; position: relative; max-width: 100%;
+}
+.nbs-flexisel-ul {
+	width: 99999px; text-align: center; list-style-type: none; position: relative;
+}
+.nbs-flexisel-inner {
+	width: 100%; overflow: hidden; float: left;
+}
+.nbs-flexisel-item {
+	margin: 0px; padding: 0px; line-height: 0px; float: left; position: relative; cursor: pointer;
+}
+.nbs-flexisel-item img {
+	width: 100%; margin-top: 10px; margin-bottom: 10px; position: relative; cursor: pointer; max-height: 45px; max-width: 100px;
+}
+.nbs-flexisel-nav-left {
+	width: 16px; height: 30px; position: absolute; z-index: 100; cursor: pointer; opacity: 0.5;
+}
+.nbs-flexisel-nav-right {
+	width: 16px; height: 30px; position: absolute; z-index: 100; cursor: pointer; opacity: 0.5;
+}
+.nbs-flexisel-nav-left {
+	background: url("images/button-previous.png") no-repeat; left: 5px;
+}
+.nbs-flexisel-nav-right {
+	background: url("images/button-next.png") no-repeat; right: 5px;
+}
